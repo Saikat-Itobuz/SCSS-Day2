@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgray;
+}
+.nav-logo .navlinks {
+  padding: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+}
+
+.main-block {
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-block .search-bar {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-block .search-bar .search-section {
+  height: 20px;
+  background-color: white;
+}
+.main-block .search-bar .search-button {
+  height: 20px;
+  background-color: aqua;
+}
+
+.margin-block {
+  border: 3rem solid;
+  border-color: lightgreen;
+}
+.margin-block .video-writing {
+  display: flex;
+  justify-content: space-between;
+}
+.margin-block .video-writing .latest-video {
+  background-color: yellow;
+}
+.margin-block .video-writing .video-page {
+  flex-direction: row;
+  background-color: red;
+}
+.margin-block .grid-container {
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-areas: "Item1 Item1 Item1 Item1" "Item2 Item3 Item4 Item5" "Item2 Item6 Item6 Item6" "Item2 Item7 Item7 Item7" "Item8 Item8 Item8 Item8";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  min-height: 100vh;
+}
+.margin-block .grid-container .item-1 {
+  grid-area: Item1;
+  background-color: lightgrey;
+}
+.margin-block .grid-container .item-2 {
+  grid-area: Item2;
+  background-color: lightsalmon;
+}
+.margin-block .grid-container .item-3 {
+  grid-area: Item3;
+  background-color: darkgrey;
+}
+.margin-block .grid-container .item-4 {
+  grid-area: Item4;
+  background-color: red;
+}
+.margin-block .grid-container .item-5 {
+  grid-area: Item5;
+  background-color: darkgray;
+}
+.margin-block .grid-container .item-6 {
+  grid-area: Item6;
+  background-color: lightblue;
+}
+.margin-block .grid-container .item-7 {
+  grid-area: Item7;
+  background-color: orange;
+}
+.margin-block .grid-container .item-8 {
+  grid-area: Item8;
+  background-color: lightgray;
+}
+.margin-block .before-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=index.css.map */
