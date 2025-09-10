@@ -16,9 +16,7 @@
 
   .nav-links {
     padding: 10px;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 5px;
+    
   }
 }
 
@@ -39,12 +37,13 @@
     } 
 
     .search-section {
-      height: 20px;
+      height: 25px;
       background-color: white;
+      
     }
     .search-button {
-      height: 20px;
-      background-color: aqua;
+      height: 25px;
+      background-color: rgb(71,145,120);
     }
 
 }
@@ -59,11 +58,11 @@
         justify-content: space-between;
 
         .latest-video {
-            background-color: yellow;
+            color: rgb(71,145,120);
         }
         .video-page {
             flex-direction: row;
-            background-color: red;
+            color: rgb(71,145,120);
         }
     }
 
@@ -126,7 +125,7 @@
   padding: 20px;
 }
 @mixin button-nav {
-  background-color: darkgray;
+  background-color: darkgreen;
   border: solid 1px;
   border-radius: 5px;
   padding: 10px 15px;
@@ -143,7 +142,57 @@
 }
 .footer {
     background-color: darkgray;
-    text-align: center;
-    padding: 20px;
-    color: white;
+    
+    height:350px;
+    .footer-content{
+        display: flex;
+        padding-left: 20%;
+        padding-right: 20%;
+        
+
+        .left-footer{
+            padding-top: 5%;
+            width: 50%;  
+            font-size: medium;
+            h2 {
+                color: darkgreen;
+            }
+            .left-footer-description{
+                width: 50%;
+                padding-top: 10%;
+                color: lightgray;
+            }
+
+        }
+        .right-footer{
+            padding-top: 5%;
+            width: 50%;
+            
+            h2{
+                color: darkgreen;
+
+            }
+            .right-footer-description{
+                padding-top: 10%;
+                color:lightgrey;
+            }
+        }
+
+        .button-footer{
+            display: flex;
+            padding-top: 10%;
+            justify-content: space-between;
+            padding: 20px;
+            .button-design{
+                background-color: darkgreen;
+                border: solid 1px;
+                border-radius: 5px;
+                height:15%;
+                padding: 10px 15px; 
+                color: white;
+                gap:20%;
+            }
+        }
+        
+    }
 }

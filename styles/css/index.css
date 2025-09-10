@@ -16,9 +16,6 @@
 }
 .nav-logo .nav-links {
   padding: 10px;
-  border-style: solid;
-  border-width: thin;
-  border-radius: 5px;
 }
 
 .main-block {
@@ -38,12 +35,12 @@
   align-items: center;
 }
 .main-block .search-section {
-  height: 20px;
+  height: 25px;
   background-color: white;
 }
 .main-block .search-button {
-  height: 20px;
-  background-color: aqua;
+  height: 25px;
+  background-color: rgb(71, 145, 120);
 }
 
 .margin-block {
@@ -55,11 +52,11 @@
   justify-content: space-between;
 }
 .margin-block .video-writing .latest-video {
-  background-color: yellow;
+  color: rgb(71, 145, 120);
 }
 .margin-block .video-writing .video-page {
   flex-direction: row;
-  background-color: red;
+  color: rgb(71, 145, 120);
 }
 .margin-block .grid-container {
   border: 1px solid;
@@ -111,7 +108,7 @@
 }
 
 .page-no {
-  background-color: darkgray;
+  background-color: darkgreen;
   border: solid 1px;
   border-radius: 5px;
   padding: 10px 15px;
@@ -119,7 +116,7 @@
 }
 
 .previous {
-  background-color: darkgray;
+  background-color: darkgreen;
   border: solid 1px;
   border-radius: 5px;
   padding: 10px 15px;
@@ -127,7 +124,7 @@
 }
 
 .next-page {
-  background-color: darkgray;
+  background-color: darkgreen;
   border: solid 1px;
   border-radius: 5px;
   padding: 10px 15px;
@@ -136,9 +133,51 @@
 
 .footer {
   background-color: darkgray;
-  text-align: center;
+  height: 350px;
+}
+.footer .footer-content {
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.footer .footer-content .left-footer {
+  padding-top: 5%;
+  width: 50%;
+  font-size: medium;
+}
+.footer .footer-content .left-footer h2 {
+  color: darkgreen;
+}
+.footer .footer-content .left-footer .left-footer-description {
+  width: 50%;
+  padding-top: 10%;
+  color: lightgray;
+}
+.footer .footer-content .right-footer {
+  padding-top: 5%;
+  width: 50%;
+}
+.footer .footer-content .right-footer h2 {
+  color: darkgreen;
+}
+.footer .footer-content .right-footer .right-footer-description {
+  padding-top: 10%;
+  color: lightgrey;
+}
+.footer .footer-content .button-footer {
+  display: flex;
+  padding-top: 10%;
+  justify-content: space-between;
   padding: 20px;
+}
+.footer .footer-content .button-footer .button-design {
+  background-color: darkgreen;
+  border: solid 1px;
+  border-radius: 5px;
+  height: 15%;
+  padding: 10px 15px;
   color: white;
+  gap: 20%;
 }
 
 /*# sourceMappingURL=index.css.map */
