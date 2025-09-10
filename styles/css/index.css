@@ -14,7 +14,7 @@
   margin-left: 10px;
   background-color: lightgreen;
 }
-.nav-logo .navlinks {
+.nav-logo .nav-links {
   padding: 10px;
   border-style: solid;
   border-width: thin;
@@ -24,22 +24,24 @@
 .main-block {
   height: 300px;
   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/139/500/small/serene-rainforest-scene-with-lush-green-foliage-and-gentle-rainfall-natural-background-for-relaxation-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main-block .search-bar {
-  height: 20px;
   display: flex;
-  flex-direction: row;
+  height: 20px;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
 }
-.main-block .search-bar .search-section {
+.main-block .search-section {
   height: 20px;
   background-color: white;
 }
-.main-block .search-bar .search-button {
+.main-block .search-button {
   height: 20px;
   background-color: aqua;
 }
@@ -101,26 +103,30 @@
   grid-area: Item8;
   background-color: lightgray;
 }
-.margin-block .before-footer {
+
+.before-footer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
-.margin-block .page-no {
+
+.page-no {
   background-color: darkgray;
   border: solid 1px;
   border-radius: 5px;
   padding: 10px 15px;
   color: white;
 }
-.margin-block .previous {
+
+.previous {
   background-color: darkgray;
   border: solid 1px;
   border-radius: 5px;
   padding: 10px 15px;
   color: white;
 }
-.margin-block .next-page {
+
+.next-page {
   background-color: darkgray;
   border: solid 1px;
   border-radius: 5px;

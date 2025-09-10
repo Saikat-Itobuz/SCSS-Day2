@@ -14,7 +14,7 @@
     background-color: lightgreen;
   }
 
-  .navlinks {
+  .nav-links {
     padding: 10px;
     border-style: solid;
     border-width: thin;
@@ -25,15 +25,18 @@
 .main-block {
   height: 300px;
   background-image: url('https://static.vecteezy.com/system/resources/thumbnails/049/139/500/small/serene-rainforest-scene-with-lush-green-foliage-and-gentle-rainfall-natural-background-for-relaxation-photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  .search-bar {
-    height: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    .search-bar {
+        display: flex;
+        height: 20px;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    } 
 
     .search-section {
       height: 20px;
@@ -43,102 +46,104 @@
       height: 20px;
       background-color: aqua;
     }
-  }
+
 }
+
 
 .margin-block {
   border: 3rem solid;
   border-color: white;
 
-  .video-writing {
-    display: flex;
-    justify-content: space-between;
+    .video-writing {
+        display: flex;
+        justify-content: space-between;
 
-    .latest-video {
-      background-color: yellow;
+        .latest-video {
+            background-color: yellow;
+        }
+        .video-page {
+            flex-direction: row;
+            background-color: red;
+        }
     }
-    .video-page {
-      flex-direction: row;
-      background-color: red;
-    }
-  }
 
-  .grid-container {
-    border: 1px solid;
-    padding: 10px;
-    text-align: center;
-    display: grid;
-    grid-template-areas:
-      "Item1 Item1 Item1 Item1"
-      "Item2 Item3 Item4 Item5"
-      "Item2 Item6 Item6 Item6"
-      "Item2 Item7 Item7 Item7"
-      "Item8 Item8 Item8 Item8";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .grid-container {
+        border: 1px solid;
+        padding: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-areas:
+          "Item1 Item1 Item1 Item1"
+          "Item2 Item3 Item4 Item5"
+          "Item2 Item6 Item6 Item6"
+          "Item2 Item7 Item7 Item7"
+          "Item8 Item8 Item8 Item8";
 
-    gap: 10px;
-    min-height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // grid-template-rows: auto 1fr auto auto;
 
-    .item-1 {
-      grid-area: Item1;
-      background-color: lightgrey;
-    }
-    .item-2 {
-      grid-area: Item2;
-      background-color: lightsalmon;
-    }
-    .item-3 {
-      grid-area: Item3;
-      background-color: darkgrey;
-    }
-    .item-4 {
-      grid-area: Item4;
-      background-color: red;
-    }
-    .item-5 {
-      grid-area: Item5;
-      background-color: darkgray;
-    }
-    .item-6 {
-      grid-area: Item6;
-      background-color: lightblue;
-    }
-    .item-7 {
-      grid-area: Item7;
-      background-color: orange;
-    }
-    .item-8 {
-      grid-area: Item8;
-      background-color: lightgray;
-    }
-  }
+        gap: 10px;
+        min-height: 100vh;
 
-  .before-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  @mixin button-nav {
-    background-color: darkgray;
-    border: solid 1px;
-    border-radius: 5px;
-    padding: 10px 15px;
-    color: white;
-  }
+        .item-1 {
+          grid-area: Item1;
+          background-color: lightgrey;
+        }
+        .item-2 {
+          grid-area: Item2;
+          background-color: lightsalmon;
+        }
+        .item-3 {
+          grid-area: Item3;
+          background-color: darkgrey;
+        }
+        .item-4 {
+          grid-area: Item4;
+          background-color: red;
+        }
+        .item-5 {
+          grid-area: Item5;
+          background-color: darkgray;
+        }
+        .item-6 {
+          grid-area: Item6;
+          background-color: lightblue;
+        }
+        .item-7 {
+          grid-area: Item7;
+          background-color: orange;
+        }
+        .item-8 {
+          grid-area: Item8;
+          background-color: lightgray;
+        }
+    }
+}
 
-  .page-no {
-    @include button-nav;
-  }
-  .previous {
-    @include button-nav;
-  }
-  .next-page {
-    @include button-nav;
-  }
+.before-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+@mixin button-nav {
+  background-color: darkgray;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+}
+.page-no {
+  @include button-nav;
+}
+.previous {
+  @include button-nav;
+}
+.next-page {
+  @include button-nav;
 }
 .footer {
-  background-color: darkgray;
-  text-align: center;
-  padding: 20px;
-  color: white;
+    background-color: darkgray;
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
